@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Online Jewellery Store</title>
+        <style>
+            #display{
+                width: 90%;
+                border: 1px solid black;
+                display: grid;
+                grid-template-columns: 23% 23% 23% 23%;
+                margin-top: 20px;
+                margin-left: 3%;
+                grid-column-gap: 2%;
+                padding: 2%;
+            }
+            #display>div{
+                border: 1px solid gray;
+                margin-left: 6%;
+                background-color: whitesmoke;
+            }
+            #display>div>img{
+                width: 90%;
+                height: 230px;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            #display>div>button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .page{
+                text-align: center;
+            }
+            #btn{
+                margin-top: 20px;
+                width: 200px;
+                height: 40px;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body class="page">
+        <h1>Jewellery Store</h1>
+        <button onclick="lowtohigh()">price low to high</button>
+        <button onclick="hightolow()">price high to low</button>
+        <button onclick="malbar()">only Malbar</button>
+        <button onclick="kalyan()">only Kalyan</button>
+        <button onclick="kazana()">only kazana</button>
+        <br>
+        <button id="btn" onclick="cart()">Show Cart</button>
+        <!-- <form>
+            <select>
+                <option>all</option>
+                <option onselect="malbar()">Malbar</option>
+                <option>Kalyan</option>
+                <option>kazana</option>
+            </select>
+        </form> -->
+        <div id="display"></div>
+    </body>
+</html>
+<script src="products.js"></script>

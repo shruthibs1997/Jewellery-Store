@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart page</title>
+        <style>
+            #page{
+                display: flex;
+            }
+            #display{
+                border: 1px solid black;
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                padding: 2%;
+                grid-column-gap: 3%;
+                width: 70%;
+            }
+            #display>div{
+                border: 1px solid red;
+            }
+            #display>div>img{
+                width: 100%;
+                height: 250px;
+            }
+            #page1{
+                border: 1px solid black;
+                width: 20%;
+                margin-left: 5%;
+            }
+            #box1{
+                width: 60%;
+                border: 2px solid black;
+                text-align: center;
+                font-size: 25px;
+                padding: 2%;
+                margin-left: 20%;
+                margin-bottom: 10px;
+            }
+            #body{
+                text-align: center;
+            }
+            .text1{
+                font-size: 15px;
+                font-weight: bold;
+            }
+            #masai{
+                margin-left: 7%;
+                margin-bottom: 10px;
+            }
+            #btn{
+                width: 200px;
+                height: 40px;
+                font-size: 25px;
+                margin-top: 20px;
+                margin-left: 5%;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <h1>Crat Items</h1>
+        <div id="page">
+            <div id="display"></div>
+            <div id="page1">
+                <legend class="text1">Total Cost:</legend>
+                <div id="box1"></div>
+                <input id="masai" type="text" placeholder="Enter coupon code"/>
+                <button onclick="coupon()">Apply</button>
+                <br>
+                <button id='btn' onclick="checkout()">Checkout</button>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="cart.js"></script>

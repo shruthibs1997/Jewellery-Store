@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>checkout page</title>
+        <style>
+            #page1>input{
+                margin-bottom: 10px;
+            }
+            #page2>input{
+                margin-bottom: 10px;
+            }
+            /* body{
+                #text-align: center;
+            } */
+            #page1>legend{
+                text-align: left
+            }
+            #page1{
+                border: 1px solid black;
+                width: 20%;
+                padding: 2%;
+                margin-left: 22%;
+            }
+            #page2{
+                border: 1px solid black;
+                width: 20%;
+                padding: 2%;
+                 margin-left: 7%;
+            }
+            #btn {
+                margin-top: 30px;
+                width: 200px;
+                height: 40px;
+                font-size: 25px;
+                margin-left: 43%;
+            }
+            #page{
+                display: flex;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <div id="page">
+        
+        <form id="page1">
+            <h1>Personal Details</h1>
+            <legend>Name:</legend>
+            <input type="text" placeholder="Enter name"/>
+            <legend>Mobile No.:</legend>
+            <input type="text" placeholder="Enter mobile.no" />
+            <legend>Adress:</legend>
+            <input type="text" placeholder="Enter adrress line1" />
+            <br>
+            <input type="text" placeholder=" adrress line2" />
+            <br>
+            <input type="text" placeholder=" pincode" />
+            <br>
+            <input type="text" placeholder=" state" />
+        </form>
+        
+        <form id="page2">
+            <h1>Payment Details</h1>
+            <legend>Name:</legend>
+            <input type="text" placeholder="name"/>
+            <legend>Card Holder Name:</legend>
+            <input type="text" placeholder="card holder name" />
+            <legend>Card No.:</legend>
+            <input type="text" placeholder="card number" />
+            <legend>CVV:</legend>
+            <input type="text" placeholder="cvv" />
+            <legend>EXP date:</legend>
+            <input type="text" placeholder="Exp date" />
+        </form>
+        </div>
+        <button id="btn" onclick="order()">Place Order</button>
+    </body>
+</html>
+<script>
+    function order(){
+        setTimeout(function(){
+            window.location.href='successful.html'
+        },3000)
+    }
+</script>
